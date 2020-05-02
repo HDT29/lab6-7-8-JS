@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.container{
+    margin-left: 500px;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+h1{
+    margin-left: 180px;
+}
+.selected{
+    margin-top: 15px;
+    padding-bottom: 10px;
+    margin-left: 180px;
+
+}
+select{
+    width: 135px;
+}
+td{
+ text-align: center;
+
+}
+th{
+
+    border: 1px solid darkgrey;
+    padding: 10px;
+
+}
+#tong{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+}
+#total{
+    font-weight: bold;
+}
+
+

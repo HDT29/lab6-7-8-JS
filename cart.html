@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/cart.css"/>
+    <script src="js/cart.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Bán hàng</h1>
+    <div class="selected">
+        <select name="" id="mucgia" onclick="selectPrice()">
+            <option value="" class="" selected>Mức giá</option>
+            <option value="0-300" class="optPrice">0-300</option>
+            <option value="300-600" class="optPrice">300-600</option>
+            <option value="all" class="optPrice">Tất cả</option>
+        </select>
+    </div>
+    <table border="2">
+        <tr>
+            <th><input type="checkbox" class="checkAll" name="checkAll" onclick="checkAll(this)"/></th>
+            <th>Hàng hóa</th>
+            <th>Đơn giá</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+        </tr>
+        <tr class="table-row">
+            <td><input type="checkbox" class="check" name="check"   onclick="clickcheckbox()"class="check"/></td>
+            <td><span class="product-name">Nokia</span></td>
+            <td><span class="price">100</span></td>
+            <td><input type="text" id="quantity1" class="quantity" disabled onkeyup="show_result()" /></td>
+            <td value="0"id="toltal"></td>
+        </tr>
+        <tr class="table-row">
+            <td><input type="checkbox" class="check" name="check"   onclick="clickcheckbox()"class="check"/></td>
+            <td><span class="product-name">Samsung</span></td>
+            <td><span class="price">200</span></td>
+            <td><input type="text" id="quantity2" class="quantity" disabled onkeyup="show_result()" /></td>
+            <td value="0"id="toltal1"></td>
+        </tr>
+        <tr class="table-row">
+            <td><input type="checkbox" class="check" name="check"   onclick="clickcheckbox()"class="check"/></td>
+            <td><span class="product-name">Iphone</span></td>
+            <td><span class="price">300</span></td>
+            <td><input type="text" id="quantity3" class="quantity" disabled onkeyup="show_result()" /></td>
+            <td value="0"id="toltal2"></td>
+        </tr>
+        <tr class="table-row">
+            <td><input type="checkbox" class="check" name="check"   onclick="clickcheckbox()"class="check"/></td>
+            <td><span class="product-name">Htc</span></td>
+            <td><span class="price">400</span></td>
+            <td><input type="text" id="quantity4" class="quantity" disabled onkeyup="show_result()" /></td>
+            <td value="0"id="toltal3"></td>
+        </tr>
+        <tr class="table-row">
+            <td><input type="checkbox" class="check" name="check"   onclick="clickcheckbox()"class="check"/></td>
+            <td><span class="product-name">Sony</span></td>
+            <td><span class="price">500</span></td>
+            <td><input type="text" id="quantity5" class="quantity" disabled onkeyup="show_result()" /></td>
+            <td value="0"id="toltal4"></td>
+        </tr>
+        <tr class="table-row">
+            <td><input type="checkbox" class="check" name="check"   onclick="clickcheckbox()"class="check"/></td>
+            <td><span class="product-name">Vsmart</span></td>
+            <td><span class="price">600</span></td>
+            <td><input type="text" id="quantity6" class="quantity" disabled onkeyup="show_result()" /></td>
+            <td value="0"id="toltal5"></td>
+        </tr>
+        <tr class="table-row">
+            <td><input type="checkbox" class="check" name="check"   onclick="clickcheckbox()"class="check"/></td>
+            <td>
+                <span class="product-name">Xiaomi</span>
+            </td>
+            <td>
+                <span class="price">700</span>
+            </td>
+            <td><input type="text" id="quantity7" class="quantity" disabled onkeyup="show_result()" /></td>
+            <td value="0"id="toltal6"></td>
+        </tr>
+        <tr class="table-row">
+            <td id="tong" colspan="4">Tổng</td>
+            <td id="total-money"></td>
+
+        </tr>
+    </table>
+</div>
+
+</body>
+
+</html>
+

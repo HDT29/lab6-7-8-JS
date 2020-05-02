@@ -1,0 +1,67 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+}
+.container{
+	width: 100%;
+	height: auto;
+}
+.gio-tinh{
+	width: 500px;
+	height: 30px;
+	border: solid 1px gray;
+	line-height: 30px;
+	padding-left:10px;
+}
+.so-thich{
+	width: 500px;
+	height: 30px;
+	border: solid 1px gray;
+	line-height: 30px;
+	padding-left:10px;
+}
+form{
+	margin-left: 500px;
+	margin-top: 50px;
+	width: 500px;
+	
+}
+.msv input{
+	width: 500px;
+	height: 30px;
+
+}
+.name input{
+	width: 500px;
+	height: 30px;
+
+}
+.Email input{
+	width: 500px;
+	height: 30px;
+}
+#nationality{
+	width: 500px;
+	height: 30px;
+}
+label{
+	font-weight: bold;
+	font-size: 16px;
+
+
+}
+button{
+	width: 80px;
+	height: 40px;
+	border-radius: 5px;
+	font-weight:bold;
+}
+h1{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+span{
+	color: red;
+}

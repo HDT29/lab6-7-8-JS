@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>validate</title>
+	<link rel="stylesheet" href="css/validate.css"/>
+	<script src="js/validate.js"></script>
+</head>
+<body>
+	<div class="container">
+		<form action="" onsubmit="return(validate());">
+			<h1>Đăng Ký Thành Viên</h1>
+			<div>
+				<label>Mã sinh viên</label>
+				<div class="msv">
+					<input type="text" id="MSV" name="Mã sinh viên">
+					<span id="error1"></span>
+				</div>
+			</div>
+			<div>
+				<label>Họ tên</label>
+				<div class="name">
+					<input type="text" id="full-name" name="họ tên">
+				</div><span id="error2"></span>
+			</div>
+			<div>
+				<label>Email</label>
+				<div class="Email">
+					<input type="text" id="email" name="email"/>
+				</div><span id="error3"></span>
+			</div>
+			<div>
+				<label>Giới tính</label>
+				<div class="gio-tinh">
+					<input type="radio" name="gioitinh"  id="male" value="nam">Nam
+					<input type="radio" name="gioitinh"  id="female" value="nữ">Nữ
+				</div><span id="error4"></span>
+
+			</div>
+			<div>
+				<label>Sở thích</label>
+				<div class="so-thich">
+					<input type="checkbox" name="interest"  id="doc-sach" value="Đọc sách">Đọc sách
+					<input type="checkbox" name="interest"  id="da-bong" value="Đá bóng">Đá bóng
+					<input type="checkbox" name="interest"  id="nghe-nhac" value="Nghe nhạc">Nghe nhạc
+					<input type="checkbox" name="interest"  id="xem-phim"value="Xem phim">Xem phim
+					<input type="checkbox" name="interest"  id="khac"value="Du lịch">Du lịch
+				</div><span id="error5"></span>
+			</div>
+			<div>
+				<label>Quốc tịch</label>
+				<div class="QT">
+					<select id="nationality">
+						<option value="" selected>Chọn quốc tịch</option>
+						<option>Việt Nam</option>
+						<option>Lào</option>
+						<option>Nhật bản</option>
+						<option>Hàn quốc</option>
+					</select>
+				</div><span id="error6"></span>
+			</div>
+			<div>
+				<label>Ghi chú</label>
+				<div>
+					<textarea name="noi-dung"  id="gchu" type="text" cols="69"rows="4" ></textarea>
+					<span id="error7"></span>
+				</div>
+			</div>
+			<button type="submit">Đăng ký</button>
+		</form>
+		
+	</div>
+</body>
+</html>
